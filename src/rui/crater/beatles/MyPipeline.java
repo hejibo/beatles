@@ -17,13 +17,16 @@ public class MyPipeline implements Pipeline {
 		System.out.println("get page: " + resultItems.getRequest().getUrl());
 
 		for (Map.Entry<String, Object> entry : resultItems.getAll().entrySet()) {
-			// System.out.println(entry.getKey() + ":\t" + entry.getValue());
+
+			//System.out.println(entry.getKey() + " : " + entry.getValue().toString());
 
 			try {
+
 				java.sql.PreparedStatement preparestatement = dbhelper.prepareStatement("INSERT INTO myhash VALUES(NULL,?,?,CURRENT_TIMESTAMP)");
 				preparestatement.setString(1, entry.getKey());
 				preparestatement.setString(2, entry.getValue().toString());
 				preparestatement.executeUpdate();
+
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
