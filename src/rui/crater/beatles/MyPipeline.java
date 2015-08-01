@@ -14,11 +14,11 @@ public class MyPipeline implements Pipeline {
 	public void process(ResultItems resultItems, Task task) {
 		DBHelper dbhelper = new DBHelper();
 
-		System.out.println("get page: " + resultItems.getRequest().getUrl());
+		System.out.println("----------->: " + resultItems.getRequest().getUrl());
 
 		for (Map.Entry<String, Object> entry : resultItems.getAll().entrySet()) {
 
-			//System.out.println(entry.getKey() + " : " + entry.getValue().toString());
+			System.out.println(entry.getKey() + " : " + entry.getValue().toString());
 
 			try {
 
