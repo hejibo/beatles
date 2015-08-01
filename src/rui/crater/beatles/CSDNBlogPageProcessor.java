@@ -4,7 +4,7 @@ import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;
 
-public class CSDNPageProcessor implements PageProcessor {
+public class CSDNBlogPageProcessor implements PageProcessor {
 
 	public static final String URL_LIST = "/?&page=\\d+";// \\d+匹配页码数字
 
@@ -15,6 +15,7 @@ public class CSDNPageProcessor implements PageProcessor {
 
 	@Override
 	public void process(Page page) {
+
 		// 列表页
 		if (page.getUrl().regex(URL_LIST).match()) {
 			// page.putField("htmlURL_LIST", page.getHtml());
@@ -27,6 +28,7 @@ public class CSDNPageProcessor implements PageProcessor {
 			// page.getHtml().xpath("//div[@class='article_title']/h1/span/a/text()"));
 			page.putField(page.getHtml().xpath("//div[@class='article_title']/h1/span/a/text()").toString(), page.getHtml().xpath("//div[@class='article_content']"));
 		}
+
 	}
 
 	@Override
