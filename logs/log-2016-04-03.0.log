@@ -1,0 +1,132 @@
+[2016-04-03 00:17:06] [ main ] [ INFO ] [com.umbrellary.BeatlesApplication: 48] Starting BeatlesApplication on HarryMacBookPro.lan with PID 3895 (/Users/Harry/Github/beatles/target/classes started by Harry in /Users/Harry/Github/beatles) 
+[2016-04-03 00:17:06] [ main ] [ INFO ] [com.umbrellary.BeatlesApplication: 666] No active profile set, falling back to default profiles: default 
+[2016-04-03 00:17:06] [ main ] [ INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext: 578] Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@50a7bc6e: startup date [Sun Apr 03 00:17:06 CST 2016]; root of context hierarchy 
+[2016-04-03 00:17:08] [ main ] [ INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean: 339] Building JPA container EntityManagerFactory for persistence unit 'default' 
+[2016-04-03 00:17:08] [ main ] [ INFO ] [org.hibernate.jpa.internal.util.LogHelper: 46] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...] 
+[2016-04-03 00:17:08] [ main ] [ INFO ] [org.hibernate.Version: 54] HHH000412: Hibernate Core {4.3.11.Final} 
+[2016-04-03 00:17:08] [ main ] [ INFO ] [org.hibernate.cfg.Environment: 239] HHH000206: hibernate.properties not found 
+[2016-04-03 00:17:08] [ main ] [ INFO ] [org.hibernate.cfg.Environment: 346] HHH000021: Bytecode provider name : javassist 
+[2016-04-03 00:17:08] [ main ] [ INFO ] [org.hibernate.annotations.common.Version: 66] HCANN000001: Hibernate Commons Annotations {4.0.5.Final} 
+[2016-04-03 00:17:08] [ main ] [ INFO ] [org.hibernate.dialect.Dialect: 145] HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory: 47] HHH000397: Using ASTQueryTranslatorFactory 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.SchemaUpdate: 207] HHH000228: Running hbm2ddl schema update 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.SchemaUpdate: 218] HHH000102: Fetching database metadata 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.SchemaUpdate: 230] HHH000396: Updating schema 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [java.sql.DatabaseMetaData: 147] HHH000262: Table not found: home 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [java.sql.DatabaseMetaData: 147] HHH000262: Table not found: home 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [java.sql.DatabaseMetaData: 147] HHH000262: Table not found: home 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [org.hibernate.tool.hbm2ddl.SchemaUpdate: 267] HHH000232: Schema update complete 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter: 431] Registering beans for JMX exposure on startup 
+[2016-04-03 00:17:09] [ main ] [ INFO ] [com.umbrellary.BeatlesApplication: 57] Started BeatlesApplication in 4.05 seconds (JVM running for 5.115) 
+[2016-04-03 00:17:10] [ main ] [ INFO ] [us.codecraft.webmagic.Spider: 307] Spider news.csdn.net started! 
+[2016-04-03 00:17:10] [ pool-2-thread-1 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://news.csdn.net/news/2 
+[2016-04-03 00:17:14] [ pool-2-thread-2 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-16/2826494 
+[2016-04-03 00:17:14] [ pool-2-thread-3 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-16/2826490 
+[2016-04-03 00:17:14] [ pool-2-thread-4 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-15/2826474 
+[2016-04-03 00:17:14] [ pool-2-thread-5 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-14/2826466 
+[2016-04-03 00:17:14] [ pool-2-thread-1 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-10/2826446 
+[2016-04-03 00:17:15] [ pool-2-thread-2 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-16/2826494', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-4 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-15/2826474', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-5 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-14/2826466', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-4 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-08/2826414 
+[2016-04-03 00:17:15] [ pool-2-thread-2 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-08/2826413 
+[2016-04-03 00:17:15] [ pool-2-thread-5 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-04/2826394 
+[2016-04-03 00:17:15] [ pool-2-thread-3 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-16/2826490', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-3 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-12-01/2826366 
+[2016-04-03 00:17:15] [ pool-2-thread-1 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-10/2826446', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-1 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://www.csdn.net/article/2015-11-30/2826357 
+[2016-04-03 00:17:15] [ pool-2-thread-4 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-08/2826414', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-4 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://news.csdn.net/news/1 
+[2016-04-03 00:17:15] [ pool-2-thread-3 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-01/2826366', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-2 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-08/2826413', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-3 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://news.csdn.net/news/3 
+[2016-04-03 00:17:15] [ pool-2-thread-2 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://news.csdn.net/news/4 
+[2016-04-03 00:17:15] [ pool-2-thread-5 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-12-04/2826394', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-5 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://news.csdn.net/news/5 
+[2016-04-03 00:17:15] [ pool-2-thread-1 ] [ ERROR] [us.codecraft.webmagic.Spider: 326] process request Request{url='http://www.csdn.net/article/2015-11-30/2826357', method='null', extras={statusCode=200}, priority=0} error 
+java.lang.NullPointerException: null
+	at com.umbrellary.beatles.DatabasePipeline.process(MyPipeline.java:20)
+	at us.codecraft.webmagic.Spider.processRequest(Spider.java:424)
+	at us.codecraft.webmagic.Spider$1.run(Spider.java:322)
+	at us.codecraft.webmagic.selector.thread.CountableThreadPool$1.run(CountableThreadPool.java:74)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+[2016-04-03 00:17:15] [ pool-2-thread-1 ] [ INFO ] [us.codecraft.webmagic.downloader.HttpClientDownloader: 87] downloading page http://news.csdn.net/news/1911 
+[2016-04-03 00:17:16] [ Thread-3 ] [ INFO ] [org.springframework.context.annotation.AnnotationConfigApplicationContext: 960] Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@50a7bc6e: startup date [Sun Apr 03 00:17:06 CST 2016]; root of context hierarchy 
+[2016-04-03 00:17:16] [ Thread-3 ] [ INFO ] [org.springframework.jmx.export.annotation.AnnotationMBeanExporter: 449] Unregistering JMX-exposed beans on shutdown 
+[2016-04-03 00:17:16] [ Thread-3 ] [ INFO ] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean: 481] Closing JPA EntityManagerFactory for persistence unit 'default' 
