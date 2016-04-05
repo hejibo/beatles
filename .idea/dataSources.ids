@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="H2 - jdbc:h2:tcp://ss.umbrellary.com:64446/./log" uuid="af7fdd2e-e05c-4dc7-84fa-a248e931d627">
+    <database-info product="H2" version="1.3.176 (2014-04-05)" jdbc-version="4.0" driver-name="H2 JDBC Driver" driver-version="1.3.176 (2014-04-05)">
+      <identifier-quote-string>&quot;</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact"/>
+    <schema name="PUBLIC" catalog="LOG"/>
+    <table name="LOG" schema="PUBLIC" catalog="LOG" type="TABLE">
+      <column name="ID" sqlType="BIGINT" precision="19" scale="0" nullable="false" jdbcType="-5" def="KE5FWFQgVkFMVUUgRk9SIFBVQkxJQy5TWVNURU1fU0VRVUVOQ0VfQzUxMjI2OERfRDhEQ180NjJFXzhDREFfMDI1OTM2QTY0MDBFKQ==" autoIncrement="true"/>
+      <column name="CONTENT" sqlType="CLOB" precision="2147483647" scale="0" nullable="false" jdbcType="2005"/>
+      <column name="DATE" sqlType="TIMESTAMP" precision="23" scale="10" nullable="false" jdbcType="93"/>
+      <column name="TYPE" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="CONSTRAINT_1" columns="ID"/>
+    </table>
+  </data-source>
+</component>
