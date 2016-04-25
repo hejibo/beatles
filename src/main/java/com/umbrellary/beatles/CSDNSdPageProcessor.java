@@ -4,15 +4,15 @@ import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.processor.PageProcessor;
 
-public class CSDNNewsPageProcessor implements PageProcessor {
+public class CSDNSdPageProcessor implements PageProcessor {
 
 	// \\d+匹配页码数字
-	public static final String URL_LIST = "/news/\\d+";
+	public static final String URL_LIST = "/sd/\\d+";
 
 	// \\d+匹配页码数字 \\w+匹配任意字符串
 	public static final String URL_POST = "http://www\\.csdn\\.net/article/\\d+-\\d+-\\d+/\\w+";
 
-	private Site site = Site.me().setDomain("news.csdn.net").setSleepTime(3000).setUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31");
+	private Site site = Site.me().setDomain("sd.csdn.net").setSleepTime(3000).setUserAgent("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_2) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.65 Safari/537.31");
 
 	@Override
 	public void process(Page page) {
