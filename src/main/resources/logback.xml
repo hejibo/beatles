@@ -29,7 +29,7 @@
 
     <logger name="org.hibernate" level="ERROR"/>
 
-    <logger name="us.codecraft.webmagic" level="ERROR"/>
+    <!--<logger name="us.codecraft.webmagic" level="ERROR"/>-->
 
     <root level="INFO">
         <appender-ref ref="FILE"/>

@@ -27,23 +27,26 @@ public class BeatlesApplication {
                 switch (args[0]) {
                     case "getweb":
 
-                        Spider.create(new CSDNCloudPageProcessor())
+                        Spider.create(new CSDNNewsPageProcessor())
+                                .addUrl("http://news.csdn.net/news/2")
+                                .addPipeline(databasePipeline)
+                                .thread(100)
+                                .run();
+
+                        Spider.create(new CSDNMobilePageProcessor())
                                 .addUrl("http://mobile.csdn.net/mobile/2")
                                 .addPipeline(databasePipeline)
                                 .thread(100)
                                 .run();
-                        Spider.create(new CSDNCloudPageProcessor())
+
+                        Spider.create(new CSDNSdPageProcessor())
                                 .addUrl("http://sd.csdn.net/sd/2")
                                 .addPipeline(databasePipeline)
                                 .thread(100)
                                 .run();
+
                         Spider.create(new CSDNCloudPageProcessor())
                                 .addUrl("http://cloud.csdn.net/cloud/2")
-                                .addPipeline(databasePipeline)
-                                .thread(100)
-                                .run();
-                        Spider.create(new CSDNCloudPageProcessor())
-                                .addUrl("http://news.csdn.net/news/2")
                                 .addPipeline(databasePipeline)
                                 .thread(100)
                                 .run();
