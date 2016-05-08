@@ -1,5 +1,5 @@
 # Web Crawler on Raspberry pi 3
-  1. Crawling about 47,000 articles on www.csdn.net
+  1. Crawling about 47,000 articles on http://www.csdn.net
   2. Statistics Frequency
 
 # Usage
